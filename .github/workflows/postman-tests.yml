@@ -33,7 +33,10 @@ jobs:
             --reporter-html-export results/report.html
 
       - name: Verificar si el archivo existe
-        run: ls -l results      
+        run: ls -l results
+
+      - name: open report
+        run: open results/report.html     
 
       - name: Upload test report
         uses: actions/upload-artifact@v4
