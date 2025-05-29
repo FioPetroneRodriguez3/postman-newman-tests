@@ -30,7 +30,7 @@ jobs:
             --reporter-junit-export results/report.xml
 
       - name: Upload test report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: postman-report
           path: results/report.xml
