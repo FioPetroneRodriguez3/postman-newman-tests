@@ -31,6 +31,9 @@ jobs:
             -e enviroment.json \
             --reporters cli,junit \
             --reporter-html-export results/report.html
+            
+      - name: Verificar si el archivo existe
+        run: ls -l results      
 
       - name: Upload test report
         uses: actions/upload-artifact@v4
